@@ -41,6 +41,6 @@ default
     touch_start(integer totalNumber)
     {
         debug("touched");
-        sendMessageToSlack(llGetDisplayName(llDetectedKey(0)) + " touched me.");
+        sendMessageToSlack(llGetLinkName(LINK_ROOT), llGetDisplayName(llDetectedKey(0)) + " touched me.");
     }
 }
